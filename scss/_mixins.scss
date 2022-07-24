@@ -1,0 +1,15 @@
+@mixin texto {
+    display: flex;
+    justify-content: left;
+}
+
+@mixin multimedia {
+    height: 250px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+@mixin borde ($grosor:2px){
+    border: $grosor solid antiquewhite;
+}

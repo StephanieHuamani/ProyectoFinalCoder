@@ -1,0 +1,10 @@
+.header {
+    background-color: map-get($colores, "colorNavFooter");
+    padding: 4px;
+}
+
+.a {
+        font-size: $font-size;
+        color: map-get($colores, "colorBasico" );
+        &:hover {
+    color: aliceblue; }}

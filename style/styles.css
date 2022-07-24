@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Akshar:wght@300&family=Koulen&display=swap");
+.p, #img,
+#video, .pForm {
+  display: flex;
+  justify-content: left;
+}
+
+.header {
+  background-color: rgb(167, 167, 167);
+  padding: 4px;
+}
+
+nav .a {
+  font-size: x-large;
+  color: brown;
+}
+nav:hover {
+  color: aliceblue;
+}
+
+#a {
+  text-decoration: none;
+  color: black;
+  font-size: x-large;
+  font-weight: bold;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+  color: antiquewhite;
+  font-size: 50px;
+  font-weight: 1000;
+  margin-bottom: 10px;
+}
+
+p,
+figcaption {
+  color: black;
+  text-align: center;
+  font-size: x-large;
+  font-weight: bold;
+  margin-bottom: 0rem;
+}
+
+.pForm {
+  font-weight: 300;
+}
+
+.textoFooter {
+  font-weight: 500;
+  font-size: x-large;
+  color: brown;
+}
+
+.img {
+  width: 80%;
+  height: 250px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+  border: 2px solid antiquewhite;
+}
+
+.multi {
+  width: 95%;
+  height: 250px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+  border: 2px solid antiquewhite;
+}
+
+.section {
+  font-size: xx-large;
+  line-height: 10mm;
+  background-image: url(../img/marvel-character-logo.jpg);
+  border: 10px;
+  border-style: groove;
+  margin-inline: 25%;
+}
+
+.footer {
+  background-color: rgb(167, 167, 167);
+  margin-top: 17%;
+  text-align: center;
+  margin-bottom: 0rem;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: brown;
+  font-family: "Akshar";
+}
+
+.border {
+  border: 1px solid antiquewhite;
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 10px;
+  text-align: center;
+}
+
+.grilla {
+  display: grid;
+  gap: 10px;
+  grid-template-areas: "header" "nav" "galeria" "video" "sidebar" "footer";
+}
+
+header {
+  grid-area: header;
+}
+
+.galeria2 {
+  grid-area: galeria;
+}
+
+.video {
+  grid-area: video;
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+footer {
+  grid-area: footer;
+}
+
+@media (max-width: 500px) {
+  a,
+.textoFooter {
+    font-size: small;
+  }
+}
+@media (min-width: 500px) {
+  .grilla {
+    grid-template-areas: "header  header" "galeria galeria" "video   sidebar" "footer  footer";
+  }
+}
+@media (min-width: 768px) {
+  .header,
+.footer {
+    background: rgb(208, 127, 127);
+    background: radial-gradient(circle, rgb(208, 127, 127) 0%, rgb(213, 222, 233) 100%);
+  }
+
+  .galeria {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+
+  .img {
+    width: 300px;
+    height: 250px;
+  }
+}
+@media (min-width: 1024px) {
+  .grilla {
+    margin: 0;
+    grid-template-areas: "header  header" "galeria video" "galeria   sidebar" "footer  footer";
+  }
+}/*# sourceMappingURL=style.css.map */
